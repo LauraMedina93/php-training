@@ -9,9 +9,9 @@
     <body>
        
 <?php
-function factorial ($numero) {
+function factorial($_GET['numero']) {
    $x = 1;
-       for ( $i = 1; $i <= $_GET['numero']; $i++) {
+       for ( $i = 1; $i <= $numero; $i++) {
            $x = $x * $i;
        }
     return $x;
