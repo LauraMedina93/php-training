@@ -9,7 +9,7 @@
     <body>
        
 <?php
-function factorial($_GET['numero']) {
+function factorial($numero) {
    $x = 1;
        for ( $i = 1; $i <= $numero; $i++) {
            $x = $x * $i;
@@ -17,7 +17,7 @@ function factorial($_GET['numero']) {
     return $x;
    
 }
-echo 'La factorial es '.  factorial('numero');
+echo 'La factorial es '.  factorial($_GET['numero']);
 
 ?>
     </body>
