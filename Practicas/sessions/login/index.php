@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-<?php session_start();?>
+<html>>
+<?php session_start()?>
 <head>
 
   <meta charset="UTF-8">

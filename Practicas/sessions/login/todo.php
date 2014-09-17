@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <?php session_start();?>
+<?php require 'datas.php'?>
 <head>
 
   <meta charset="UTF-8">
@@ -19,7 +20,7 @@
     
     <div id="userbox">
         <h1 accesskey="index.php" id="signup" style="background-color: rgb(118, 171, 219); background-position: initial initial; background-repeat: initial initial;">Lista de Tareas: <?php echo $_SESSION['name'];?> </h1>
-        <form action="login.php" method="POST" id="form-login">
+        <form action="addTask.php" method="POST" id="form-login">
             <div class="form-group">
               <input id="task" class="inline-input" name="task" placeholder="Nueva Tarea" style="opacity: 1; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
                <button class="inline-button">Agregar Tarea</button>
@@ -29,10 +30,11 @@
             <button class="salida">Salir</button>
         </form>
         <ul>
-           <li>Plan de Vacaciones</li>
-           <li>Reunion con clientes</li>
-           <li>Codear</li>
-        </ul>
+            <?php foreach ($tareas as $nomTarea ):?>
+            <li> <?php echo $nomTarea['nomTarea']?> </li>
+            <?php endforeach?>
+                   
+       </ul>
     </div>
 </div>
 <?php else: ?>
