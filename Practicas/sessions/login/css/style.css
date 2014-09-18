@@ -48,6 +48,12 @@
     font-size: 14px;
 }
 
+.signup{
+    position: absolute;
+    right: 125px;
+    bottom: 19px;
+}
+
 input  {
     -moz-appearance: none;
     -webkit-appearance: none;

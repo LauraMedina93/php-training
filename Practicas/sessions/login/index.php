@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>>
+<html>
 <?php session_start()?>
 <head>
 
@@ -26,6 +26,7 @@
             <input id="pass" name="password" type="password" placeholder="Password" style="opacity: 1; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
             <input type="submit" id="signupb" style="cursor: default; text-align: center" value="Ingresar"/>
         </form>
+        <a href="register.php" class="signup">Sign Up</a>
     </div>
     <script src="js/index.js"></script>
 </div>
