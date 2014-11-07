@@ -1,0 +1,19 @@
+#form-search{
+    position: relative;
+width: auto;
+padding: initial;
+
+}
+#buscar{
+    background-color: #b2dba1;
+    border-color: #b2dba1;
+    font-size: medium;
+    color: #000;
+    width:80px;
+    height:26px;
+}
+#text{
+    border-color: #b2dba1;
+    width:280px;
+    height:20px;
+}
