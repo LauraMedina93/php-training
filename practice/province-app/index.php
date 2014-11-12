@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Buscar Provincias</title>
         <link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+ 
     </head>
     
     <body>
@@ -13,15 +14,22 @@
                 <input type="submit" id="buscar" name="buscar" value="Search!">
         </div>
         <div class="result-box">
+            <br>
             <div class="box1">
-                <ul>
+                <ul id="results">
                     <li>Example 1</li>
+                    <br>
+                    <li>Example 2</li>
+                    <br>
+                    <li>Example 3</li>
+                    <br>
+                    <li>Example 4</li>
                 </ul>
+               
             </div>
             <div class="box2">
-                <ul>
-                    <li>Example 2</li>  
-                </ul>
+                <ul>Example 3</ul>
+                <ul>Example 4</ul>
             </div>
         </div>
     </body>
