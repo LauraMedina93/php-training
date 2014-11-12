@@ -7,13 +7,22 @@
     </head>
     
     <body>
-        <h3 style="color:darkgreen; margin: 10px; height: 20px; text-align: center" > Escriba el nombre de la Provincia a buscar</h3>
-        <div> 
-            <form method="GET" id="form-search">
+        <h3 id="h3"> Escriba el nombre de la Provincia a buscar</h3>
+        <div class="search-box"> 
                 <input id="text" name="text" placeholder="Search...">
                 <input type="submit" id="buscar" name="buscar" value="Search!">
-            </form> 
-            <hr  noshade width="1270" size="1">
+        </div>
+        <div class="result-box">
+            <div class="box1">
+                <ul>
+                    <li>Example 1</li>
+                </ul>
+            </div>
+            <div class="box2">
+                <ul>
+                    <li>Example 2</li>  
+                </ul>
+            </div>
         </div>
     </body>
 

@@ -1,8 +1,12 @@
-#form-search{
-    position: relative;
-width: auto;
-padding: initial;
-
+.search-box{
+    margin: 0 auto;
+    text-align: center;
+}
+#h3{
+    color:darkgreen;
+    margin: 10px; 
+    height: 20px; 
+    text-align: center;
 }
 #buscar{
     background-color: #b2dba1;
@@ -17,3 +21,10 @@ padding: initial;
     width:280px;
     height:20px;
 }
+.result-box{
+    margin-top: 10px;
+    width: auto;
+    border-top: solid 1px #0d3349 ;
+    text-align: center;  
+}
+
