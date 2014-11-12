@@ -28,6 +28,7 @@
     text-align: center;  
 }
 .box1{
+    color: #953b39;
     float: left;
     width: 500px;
     border-style:solid;
@@ -36,6 +37,7 @@
 }
 
 .box2{
+    color: slateblue;
     float: right;
     width: 500px;
     border-style:solid;
@@ -45,6 +47,7 @@
 ul#results li:hover{
     cursor: pointer;
     font-weight: bold;
+    color: #953b39;
 }
 li{
     list-style: none;
