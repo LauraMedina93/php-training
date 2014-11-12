@@ -46,6 +46,7 @@
     background-color: #e2e2f9;
     border: 1px solid #bebde9;
     border-radius: 1em;
+    box-shadow: black 0.2em 0.2em 0.9em;
 }
 ul#results li:hover{
     cursor: pointer;
