@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <title>Buscar Provincias</title>
         <link rel="stylesheet" href="css/main.css" media="screen" type="text/css" />
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  
     </head>
     
@@ -32,6 +33,7 @@
                 <ul>Example 4</ul>
             </div>
         </div>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 
 </html>

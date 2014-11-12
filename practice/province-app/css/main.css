@@ -56,3 +56,6 @@ ul#results li:hover{
 li{
     list-style: none;
 }
+ul{
+    -webkit-padding-start: 0px;
+}
