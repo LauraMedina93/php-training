@@ -15,14 +15,10 @@ $(document).ready(function() {
                 type: "GET",
                 url: "filter_province.php",
                 data: {"consulta": consulta},
-                dataType: "html",
                 success: function(respuesta){
-                    alert (respuesta);
+                    console.log(respuesta);
                 }
             });
         }
     });
 });
-
-//funcion de chango
-
