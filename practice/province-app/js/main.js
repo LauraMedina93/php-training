@@ -10,15 +10,24 @@ $(document).ready(function() {
         var nameLength = $this.val().length;
         //hace la búsqueda
 
-        if (nameLength >= 2) {
+        if (nameLength >= 1) {
             $.ajax({
                 type: "GET",
                 url: "filter_province.php",
                 data: {"consulta": consulta},
                 success: function(respuesta){
-                    console.log(respuesta);
+                    $('#results').html('');
+                    if( respuesta != consulta ){ //alert que no existe provincia
+                        alert('No existe la provincia con ese parametro');
+                    }
+                    for (var i = 0; i< respuesta.length; i++){
+                        $('#results').append('<br>'+'<li>'+respuesta[i].name+'</li>'+'<br>');
+                                                                       
+                    }
+                    
                 }
             });
         }
     });
+    $("#results").on('click','li',function(){alert($(this).text())});
 });
