@@ -11,6 +11,5 @@ if (isset($_GET['consulta'])) {
     header('content-type: application/json');
     $result = json_encode($provinces);
     echo $result;
-    exit();
 }
 ?>

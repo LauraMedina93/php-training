@@ -18,19 +18,15 @@
             <br>
             <div class="box1">
                 <ul id="results">
-                    <li>Example 1</li>
-                    <br>
-                    <li>Example 2</li>
-                    <br>
-                    <li>Example 3</li>
-                    <br>
-                    <li>Example 4</li>
+                    <li>Provincias Disponibles</li>
                 </ul>
                
             </div>
             <div class="box2">
-                <ul>Example 3</ul>
-                <ul>Example 4</ul>
+                <ul id="results_city">
+                    <li> Ciudades disponibles</li>
+                </ul>
+                
             </div>
         </div>
         <script type="text/javascript" src="js/main.js"></script>

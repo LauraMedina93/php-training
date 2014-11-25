@@ -17,9 +17,9 @@ $(document).ready(function() {
                 data: {"consulta": consulta},
                 success: function(respuesta){
                     $('#results').html('');
-                    if( respuesta != consulta ){ //alert que no existe provincia
-                        alert('No existe la provincia con ese parametro');
-                    }
+                    //if( respuesta != consulta ){ //alert que no existe provincia
+                    //    alert('No existe la provincia con ese parametro');
+                    //}
                     for (var i = 0; i< respuesta.length; i++){
                         $('#results').append('<br>'+'<li>'+respuesta[i].name+'</li>'+'<br>');
                                                                        
@@ -27,6 +27,23 @@ $(document).ready(function() {
                     
                 }
             });
+            //Agregado que funciona a medias (no carga las ciudades por GET) 
+            var consCity;
+            consCity = $("#results").val();
+            $.ajax({
+                type: "GET",
+                url: "filter_city.php",
+                data: {"consCity": consCity},
+                success: function(respCity){
+                        $("#results").on('click','li',function(){
+                            $("#results_city").html('Ciudades de la provincia seleccionada');
+                    for (var i = 0; i< respCity.length; i++){
+                        $('#results_city').append('<br>'+'<li>'+respCity[i].name+'</li>'+'<br>');
+                                                                       
+                    }});
+                }
+            }); //Hasta acá es la prueba!
+            
         }
     });
     $("#results").on('click','li',function(){alert($(this).text())});
