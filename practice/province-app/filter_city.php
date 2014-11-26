@@ -3,7 +3,7 @@ require './../practicaORM/bootstrap.php';
 
 $comparador = $_GET['consCity'];
 if (isset($comparador)) {
-    $query = $entityManager->createQuery("SELECT c.name FROM city c INNER JOIN province p ON c.idProv = p.id WHERE p.id = '".$comparador."' ");
+    $query = $entityManager->createQuery("SELECT c.name FROM city c JOIN c.province p WHERE p.name = '".$comparador."' ");
     $cities = $query->getResult();
   
     header('content-type: application/json');

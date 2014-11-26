@@ -3,14 +3,14 @@
     text-align: center;
 }
 #h3{
-    color:darkgreen;
+    color:#006666;
     margin: 10px; 
     height: 20px; 
     text-align: center;
 }
 #buscar{
-    background-color: #b2dba1;
-    border-color: #b2dba1;
+    background-color: #009999;
+    border-color: #009999;
     font-size: medium;
     color: #000;
     width:80px;
