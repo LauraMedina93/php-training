@@ -17,20 +17,27 @@ $(document).ready(function() {
                 data: {"consulta": consulta},
                 success: function(respuesta) {
                     $('#results').html('');
-                    //if( respuesta != consulta ){ //alert que no existe provincia
+                    //if( respuesta !== consulta ){ //alert que no existe provincia
                     //    alert('No existe la provincia con ese parametro');
                     //}
                     for (var i = 0; i < respuesta.length; i++) {
                         $('#results').append('<br>' + '<li>' + respuesta[i].name + '</li>' + '<br>');
 
                     }
-
+                    $('#count').html('');
+                    
+                    $('#count').append('<br>'+'<li>'+'Cantidad de provincias encontradas: '+respuesta.length+'</li>'+'<br>');
+                    if (respuesta.length == 0) {
+                        $('#count1').html('');
+                        $('#results_city').html('No existen ciudades disponibles');
+                        $('#count').append('<br>'+'<li>'+'No hay Provincias que coincidan'+'</li>'+'<br>');
+                        
+                    }
                 }
             });
         }
     });
-    //Agregado que funciona a medias (no carga las ciudades por GET) 
-
+    
     $("#results").on('click', 'li', function() {
         var consCity;
         consCity = $(this).text();
@@ -45,8 +52,10 @@ $(document).ready(function() {
                     $('#results_city').append('<br>' + '<li>' + respCity[i].name+ '</li>' + '<br>');
 
                 }
+                $('#count1').html('');
+                $('#count1').append('<br>'+'<li>'+'Cantidad de ciudades encontradas: '+respCity.length+'</li>'+'<br>');
             }
-        }); //Hasta acá es la prueba!
+        }); 
     });
 
     $("#results").on('click', 'li', function() { alert($(this).text())

@@ -20,13 +20,18 @@
                 <ul id="results">
                     <li>Provincias Disponibles</li>
                 </ul>
+                <ul id="count">
+                    <li></li>
+                </ul>
                
             </div>
             <div class="box2">
                 <ul id="results_city">
                     <li> Ciudades disponibles</li>
                 </ul>
-                
+                <ul id="count1">
+                    <li></li>
+                </ul>
             </div>
         </div>
         <script type="text/javascript" src="js/main.js"></script>
