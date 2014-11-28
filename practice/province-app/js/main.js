@@ -8,7 +8,10 @@ $(document).ready(function() {
         consulta = $("#text").val();
         var $this = $(this);
         var nameLength = $this.val().length;
+        
         //hace la búsqueda
+
+
 
         if (nameLength >= 1) {
             $.ajax({
@@ -16,17 +19,15 @@ $(document).ready(function() {
                 url: "filter_province.php",
                 data: {"consulta": consulta},
                 success: function(respuesta) {
+                    
                     $('#results').html('');
-                    //if( respuesta !== consulta ){ //alert que no existe provincia
-                    //    alert('No existe la provincia con ese parametro');
-                    //}
                     for (var i = 0; i < respuesta.length; i++) {
-                        $('#results').append('<br>' + '<li>' + respuesta[i].name + '</li>' + '<br>');
-
+                        var resaltar = '<b>'+respuesta[i].name.substr(0,consulta.length)+'</b>'
+                        $('#results').append('<br>' + '<li>' + resaltar + respuesta[i].name.substr(consulta.length)+'</li>' + '<br>');
+                        
                     }
                     $('#count').html('');
-                    
-                    $('#count').append('<br>'+'<li>'+'Cantidad de provincias encontradas: '+respuesta.length+'</li>'+'<br>');
+                    $('#count').append('<br>'+'<li>'+'Cantidad de provincias encontradas: '+respuesta.length+'</li>'+'<br>'); 
                     if (respuesta.length == 0) {
                         $('#count1').html('');
                         $('#results_city').html('No existen ciudades disponibles');
@@ -50,7 +51,6 @@ $(document).ready(function() {
                 $("#results_city").html('');
                 for (var i = 0; i < respCity.length; i++) {
                     $('#results_city').append('<br>' + '<li>' + respCity[i].name+ '</li>' + '<br>');
-
                 }
                 $('#count1').html('');
                 $('#count1').append('<br>'+'<li>'+'Cantidad de ciudades encontradas: '+respCity.length+'</li>'+'<br>');
