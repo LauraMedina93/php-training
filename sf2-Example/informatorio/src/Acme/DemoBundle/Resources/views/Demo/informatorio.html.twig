@@ -1,0 +1,10 @@
+{% extends "AcmeDemoBundle::informatorioBase.html.twig" %}
+
+{% block title "Hello " ~ name %}
+
+{% block informatorio %}
+    {{parent()}}
+    <h1>Hello <b>{{ name }}</b></h1>
+{% endblock %}
+
+{% set code = code(_self) %}

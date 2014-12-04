@@ -30,6 +30,17 @@ class DemoController extends Controller
     {
         return array('name' => $name);
     }
+    
+    /**
+     * @Route("/informatorio/{name}", name="_demo_informatorio")
+     * @Template()
+     */
+    public function informatorioAction($name)
+    {
+        return array('name' => $name);
+    }
+    
+    
 
     /**
      * @Route("/contact", name="_demo_contact")

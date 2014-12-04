@@ -193,6 +193,11 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                 return $this->mergeDefaults(array_replace($matches, array('_route' => '_demo_hello')), array (  '_controller' => 'Acme\\DemoBundle\\Controller\\DemoController::helloAction',));
             }
 
+            // _demo_informatorio
+            if (0 === strpos($pathinfo, '/demo/informatorio') && preg_match('#^/demo/informatorio/(?P<name>[^/]++)$#s', $pathinfo, $matches)) {
+                return $this->mergeDefaults(array_replace($matches, array('_route' => '_demo_informatorio')), array (  '_controller' => 'Acme\\DemoBundle\\Controller\\DemoController::informatorioAction',));
+            }
+
             // _demo_contact
             if ($pathinfo === '/demo/contact') {
                 return array (  '_controller' => 'Acme\\DemoBundle\\Controller\\DemoController::contactAction',  '_route' => '_demo_contact',);
