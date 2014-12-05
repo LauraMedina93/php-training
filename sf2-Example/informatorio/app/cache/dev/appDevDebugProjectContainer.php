@@ -20,7 +20,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => 'C:/xampp/htdocs/PHPTraining/php-training/sf2-Example/informatorio/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'app',
+            'kernel.name' => 'ap_',
             'kernel.cache_dir' => 'C:/xampp/htdocs/PHPTraining/php-training/sf2-Example/informatorio/app/cache/dev',
             'kernel.logs_dir' => 'C:/xampp/htdocs/PHPTraining/php-training/sf2-Example/informatorio/app/logs',
             'kernel.bundles' => array(

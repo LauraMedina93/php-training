@@ -81,6 +81,8 @@
   'AcmeDemoBundle:Demo:contact.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/Demo/contact.html.twig',
   'AcmeDemoBundle:Demo:hello.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/Demo/hello.html.twig',
   'AcmeDemoBundle:Demo:index.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/Demo/index.html.twig',
+  'AcmeDemoBundle:Demo:informatorio.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/Demo/informatorio.html.twig',
+  'AcmeDemoBundle::informatorioBase.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/informatorioBase.html.twig',
   'AcmeDemoBundle::layout.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/layout.html.twig',
   'AcmeDemoBundle:Secured:hello.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/Secured/hello.html.twig',
   'AcmeDemoBundle:Secured:helloadmin.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/Secured/helloadmin.html.twig',
@@ -125,4 +127,5 @@
   'SensioDistributionBundle:Configurator/Step:secret.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\vendor\\sensio\\distribution-bundle\\Sensio\\Bundle\\DistributionBundle/Resources/views/Configurator/Step/secret.html.twig',
   'SensioDistributionBundle:Configurator:steps.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\vendor\\sensio\\distribution-bundle\\Sensio\\Bundle\\DistributionBundle/Resources/views/Configurator/steps.html.twig',
   '::base.html.twig' => 'C:/xampp/htdocs/PHPTraining/php-training/sf2-Example/informatorio/app/Resources\\views/base.html.twig',
+  '::tobeincluded.html.twig' => 'C:/xampp/htdocs/PHPTraining/php-training/sf2-Example/informatorio/app/Resources\\views/tobeincluded.html.twig',
 );

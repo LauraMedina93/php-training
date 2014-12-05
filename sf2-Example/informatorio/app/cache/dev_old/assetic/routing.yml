@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: 'C:/xampp/htdocs/PHPTraining/php-training/sf2-Example/informatorio/app/config/routing_dev.yml'
