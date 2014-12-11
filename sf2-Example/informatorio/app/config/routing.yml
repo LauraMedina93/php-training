@@ -1,0 +1,4 @@
+info_info:
+    resource: "@InfoInfoBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,0 +1,7 @@
+info_info_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: InfoInfoBundle:Default:index }
+_demo:
+    resource: "@InfoInfoBundle/Controller/DefaultController.php"
+    type:     annotation
+    prefix:   /

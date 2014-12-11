@@ -77,6 +77,8 @@
   'SwiftmailerBundle:Collector:swiftmailer.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\vendor\\symfony\\swiftmailer-bundle\\Symfony\\Bundle\\SwiftmailerBundle/Resources/views/Collector/swiftmailer.html.twig',
   'DoctrineBundle:Collector:db.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\vendor\\doctrine\\doctrine-bundle/Resources/views/Collector/explain.html.twig',
+  'InfoInfoBundle:Default:fake.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Info\\InfoBundle/Resources/views/Default/fake.html.twig',
+  'InfoInfoBundle:Default:index.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Info\\InfoBundle/Resources/views/Default/index.html.twig',
   'DebugBundle:Profiler:dump.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\vendor\\symfony\\symfony\\src\\Symfony\\Bundle\\DebugBundle/Resources/views/Profiler/dump.html.twig',
   'AcmeDemoBundle:Demo:contact.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/Demo/contact.html.twig',
   'AcmeDemoBundle:Demo:hello.html.twig' => 'C:\\xampp\\htdocs\\PHPTraining\\php-training\\sf2-Example\\informatorio\\src\\Acme\\DemoBundle/Resources/views/Demo/hello.html.twig',
